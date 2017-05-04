@@ -1,6 +1,26 @@
-# challenges
-The place to upload your solutions of our monthly challenges
+# Monthly Challenges [study.py]
 
-Please navigate into the folder for the current month. In there you can find sub-folders for each of the challenges.
+This is the repository for the monthly challenges. Here you can:
 
-Upload your solution as `username.py` (Slack username)
+* See the challenges for every month
+* Upload your solutions to tasks
+
+## Folder Structure
+
+There is a toplevel folder for each Month. Inside you can find subfolders for every challenge.
+
+* May
+  * 1_beginner
+  * 2_web_scraping
+  * 3_data
+
+## How to submit solutions
+
+Please name your python file as your Slack username. For me that would be `cripcate.py`.
+
+1. Navigate to a folder on your machine where you would like to store the repository.
+2. Clone the repository: `git clone https://github.com/py-study-group/challenges`.
+3. Navigate into the folder for the correct month you're trying to submit to (e.g. `cd May`)
+4. Navigate into the subfolder for the correct challenge you're trying to submit to (e.g. `cd 1_beginner`)
+5. Copy your python script into the folder: `cp /path/to/script/[username].py .`
+6. Add the file and commit the change: `git add [username].py` & `git commit -m "Added solution xy"`
