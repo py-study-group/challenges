@@ -43,4 +43,4 @@ Please name your python file as your Slack username. For me that would be `cripc
 6. Copy your python script into the folder: `cp /path/to/script/[username].py .`
 7. Add the file and commit the change: `git add [username].py` & `git commit -m "Added solution for challenge x by user y"`
 8. Push the changes to the remote branch: `git push origin xyz`
-9. Create a pull request: ![pull](https://i.imgur.com/0ngU8Wy.png)
+9. Create a pull request
