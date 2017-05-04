@@ -5,12 +5,9 @@ This is the repository for the monthly challenges. Here you can:
 * See the challenges for every month
 * Upload your solutions to tasks
 
-## Folder Structure
+## Where to find the challenges
 
-There is a toplevel folder for each Month. Inside you can find subfolders for every challenge.
-
-The solutions are stored inside the challenge folders.
-Inside the monthly folder you can find the markdown document explaining the challenges.
+There is a toplevel folder for each Month. Inside you can find subfolders for every challenge. Inside the monthly folder you can find the markdown document explaining the challenges.
 
 * May/
   * 1_beginner/
@@ -19,7 +16,7 @@ Inside the monthly folder you can find the markdown document explaining the chal
   * 2_web_scraping/
     * `username1.py`
   * 3_data/
-  * `challenges.md`
+  * **`challenges.md`**
 
 ## How to submit solutions
 
