@@ -52,8 +52,8 @@ _values = {
 
 def translate(text):
     """Translate text to morse"""
-    assert type(string) is str, "Input must be a string"
-    result = ' '.join(_values.get(s.upper(), f'#{s}') for s in string)
+    assert type(text) is str, "Input must be a string"
+    result = ' '.join(_values.get(s.upper(), f'#{s}') for s in text)
     return result
 
 
