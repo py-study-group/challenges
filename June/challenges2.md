@@ -1,4 +1,4 @@
-#Monthly programming challenges for the study.py group. June edition.
+# Monthly programming challenges for the study.py group. June edition.
 
 Hello everybody!
 
@@ -58,3 +58,7 @@ Assuming you're a person who doesn't clean his pc very much, you probably would 
 Be cautios to **only use one folder** for this program, and only use data that you can afford losing. 
 
 **Bonus:** After the operation, show to the user how much disk space was freed up and how many files were deleted. Also look for a way to implement data-recovery.
+
+---------
+
+Happy Coding!
