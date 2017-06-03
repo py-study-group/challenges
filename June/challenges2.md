@@ -34,10 +34,10 @@ A lot of you guys are aspiring WebDevs. Everyone knows the registration pages of
 
 **Problem:** On online registration pages, you often want to have a text-field where the user inputs his/her E-Mail adress. Write a python function to check, whether the E-Mail (input string) is valid. The rules for a valid E-Mail adress are:
 
-1. Contains a <kbd>@<\kbd>-character.
-2. Contains at least 1 character before the <kbd>@<\kbd>.
-3. Contains at least 1 <kbd>.<\kbd>-character.
-4. The <kbd>.<\kbd> has to be in the correct place. (e.g. dalai-lama.email@com is invalid, dalai.lama@email.com is valid)
+1. Contains a <kbd>@</kbd>-character.
+2. Contains at least 1 character before the <kbd>@</kbd>.
+3. Contains at least 1 <kbd>.</kbd>-character.
+4. The <kbd>.</kbd> has to be in the correct place. (e.g. dalai-lama.email@com is invalid, dalai.lama@email.com is valid)
 
 Addinally: Look up common trash-mail suppliers. Try to pass their domains (e.g. 1234@trash-mail.com) as invalid, because you're an evil company and want all of your user's data.
 
