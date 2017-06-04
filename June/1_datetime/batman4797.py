@@ -45,7 +45,7 @@ class whatsleft():
         elif self.ltovr_days in [1,2]:
             ltovr_weekdays = 1
 
-        self.rem_weekdays = (self.rem_weeks * 4 )+ ltovr_weekdays
+        self.rem_weekdays = (self.rem_weeks * 5 )+ ltovr_weekdays
         self.rem_abs_time = "{}:{}".format(self.rem_days,ltovr_time)
         self.elapsed = str(datetime.now() - start_time)
 
