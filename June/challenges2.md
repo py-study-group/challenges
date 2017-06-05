@@ -41,7 +41,7 @@ A lot of you guys are aspiring WebDevs. Everyone knows the registration pages of
 
 Addinally: Look up common trash-mail suppliers. Try to pass their domains (e.g. 1234@trash-mail.com) as invalid, because you're an evil company and want all of your user's data.
 
-**Bonus:** Try to think of rules for adress / name / phone number validation and write functions for them. Let the user of your program chose what type of string to check for by specifying command line arguments (e.g. `python checker.py 'main street 123' --adress`)
+**Bonus:** Try to think of rules for address / name / phone number validation and write functions for them. Let the user of your program chose what type of string to check for by specifying command line arguments (e.g. `python checker.py 'main street 123' --address`)
 
 
 ## 3. [Automation] Auto-Remove
@@ -55,7 +55,7 @@ Assuming you're a person who doesn't clean his pc very much, you probably would 
 3. Asks for confimation if the files should really be deleted
 4. Deletes them if confirmed.
 
-Be cautios to **only use one folder** for this program, and only use data that you can afford losing. 
+Be cautious to **only use one folder** for this program, and only use data that you can afford losing. 
 
 **Bonus:** After the operation, show to the user how much disk space was freed up and how many files were deleted. Also look for a way to implement data-recovery.
 
