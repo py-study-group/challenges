@@ -33,8 +33,4 @@ Of course that is just an example. you should design your own markup language th
     - You should save the complete file on disk after it has been downloaded.
     - Downloading files can be useful in installing packages or scraping images or data for analysis
  
- 2. Unzip the sample file and save it's contents to disk. 
- 
- 
-
-    
+ 2. Unzip the sample file and save it's contents to disk.
