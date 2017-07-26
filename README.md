@@ -22,11 +22,10 @@ There is a toplevel folder for each Month. Inside you can find subfolders for ev
 
 Please name your python file as your Slack username. For me that would be `cripcate.py`.
 
-1. Navigate to a folder on your machine where you would like to store the repository.
-3. Navigate into the folder for the correct month you're trying to submit to (e.g. `cd May`)
-4. Navigate into the sub-folder for the correct challenge you're trying to submit to (e.g. `cd 1_beginner`)
-5. Upload your python script into the folder: ![uploading](https://i.imgur.com/gbdCvKF.png)
-6. Create a pull request: ![pull](https://i.imgur.com/0ngU8Wy.png)
+1. Navigate into the folder for the correct month you're trying to submit to (e.g. `cd May`)
+2. Navigate into the sub-folder for the correct challenge you're trying to submit to (e.g. `cd 1_beginner`)
+3. Upload your python script into the folder: ![uploading](https://i.imgur.com/gbdCvKF.png)
+4. Create a pull request: ![pull](https://i.imgur.com/0ngU8Wy.png)
 
 ## How to download challenges and solutions
 
