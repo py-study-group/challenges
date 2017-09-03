@@ -1,6 +1,6 @@
 # Monthly programming challenges for the study.py group
 
-## Use Python to see who is connected your network
+## 1) Use Python to see who is connected your network
 
 Get the local IP address and subnet mask and calculate the address range in you network segment. Scan all the addresses and display those that are alive.
 
@@ -9,7 +9,7 @@ Get the local IP address and subnet mask and calculate the address range in you 
 Extract the IPs on a CSV file
 
 
-## Use named pipes to pass data between two Python scripts.
+## 2) Use named pipes to pass data between two Python scripts.
 
 Create two scripts:
 
@@ -21,7 +21,7 @@ client.py uses a named pipe to send a text message to client.py.
 
 server.py waits for the message and displays its contents.
 
-On Linux you can use os.mkfifo() to work with named pipes and on Windows you can use Tim Golden's pywin32 module.
+On Linux you can use `os.mkfifo()` to work with named pipes and on Windows you can use Tim Golden's pywin32 module.
 
 ### Bonus Points
 
@@ -32,7 +32,7 @@ NamedPipe __init__() method should accept one argument - the path of the named p
 NamedPipe should have three methods: read(), write() and close. Both client.py and server.py should use NamedPipe for communication.
 
 
-## Use pyaudio to generate and play a few tones of your favorite song
+## 3) Use pyaudio to generate and play a few tones of your favourite song
 
 Each music note has a frequency. You can look up frequencies you need on Wikipedia:
 
