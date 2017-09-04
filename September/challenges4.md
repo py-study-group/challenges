@@ -17,9 +17,9 @@ Create two scripts:
 
 2. client.py
 
-client.py uses a named pipe to send a text message to client.py.
+Make `client.py` use a named pipe to send a text message to `server.py`.
 
-server.py waits for the message and displays its contents.
+`server.py` in turn waits for the message and displays its contents.
 
 On Linux you can use `os.mkfifo()` to work with named pipes and on Windows you can use Tim Golden's pywin32 module.
 
