@@ -17,7 +17,7 @@ Create two scripts:
 
 2. client.py
 
-client.py uses a named pipe to send a text message to client.py.
+client.py uses a named pipe to send a text message to server.py.
 
 server.py waits for the message and displays its contents.
 
