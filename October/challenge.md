@@ -1,4 +1,4 @@
-# Monthly programming challenges for the study.py group
+# Monthly programming challenge for the study.py group
 
 ## Write a small Command Line program that is able to process only CSV files and provides the following options.
 
