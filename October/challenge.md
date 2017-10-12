@@ -63,4 +63,5 @@ Provide an option for saving some data into MongoDB
 
 * [Argparse for CLI - Intermediate Python Programming p.3](https://www.youtube.com/watch?v=0twL6MXCLdQ)
 * [Writing awesome Command-Line Programs in Python](https://www.youtube.com/watch?v=gR73nLbbgqY&t)
+* [Working with CSV files](https://www.youtube.com/watch?v=q5uM4VKywbA&feature=youtu.be)
 * [Tutorial — PyMongo 3.5.1 documentation - MongoDB API](http://api.mongodb.com/python/current/tutorial.html)
