@@ -2,8 +2,8 @@
 
 '''
     https://github.com/py-study-group/challenges/blob/master/October/challenge.md
-    sam.i.am        .py - Uses argparse to get information from csv files.
-    Use october_study_argparse -h to see the help menu.
+    macsimus.py - Uses argparse to get information from csv files.
+    Use macsimus.py -h to see the help menu.
 '''
 import argparse
 import csv
