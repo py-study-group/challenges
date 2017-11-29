@@ -22,7 +22,7 @@ Provide a CLI option([more about CLI](https://github.com/py-study-group/challeng
 
 ## Tips that might help you
 
-* [piefix module](https://pypi.python.org/pypi/piexif)
+* [piexif module](https://pypi.python.org/pypi/piexif)
 * [exifread module](https://pypi.python.org/pypi/ExifRead)
 * [You can read metadata with pillow module](https://pillow.readthedocs.io/en/4.3.x/)
 
