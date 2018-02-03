@@ -11,13 +11,9 @@ There is a toplevel folder for each month with a `challenges.md` file that expla
 find subfolders for every challenge where all submitted code is kept. For example:
 
 * May/
-  * 1_beginner/
+  * README.md/
     * `username1.py`
     * `username2.py`
-  * 2_web_scraping/
-    * `username1.py`
-  * 3_data/
-  * `challenges.md`
 
 As you can see, each file is named after the Slack username of the submitter. 
 
