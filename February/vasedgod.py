@@ -11,6 +11,7 @@ shifted by +3 characters becomes...
 
 DEFGHI...ABC
 
+~ Advanced version  with auto-detect ~
 """
 
 import click
