@@ -1,6 +1,10 @@
 import argparse
 
 def caesar_cipher(mode, message, key):
+    """
+    function to encode/decode caesar cipher
+    if decode, negate the key
+    """
     if key>26:
         key = key % 26
     if mode == 'd':
