@@ -50,7 +50,7 @@ def main():
 		"-m", "--mode", choices=['encode', 'decode'], help="options: 'encode' or 'decode' the message", required=True,
 		type=str)
 	parser.add_argument(
-		"-d", "--decode", help="specifies that the characters from file or text will be decoded")
+		"-d", "--decode", help="characters from file or text will be decoded")
 	parser.add_argument(
 		"-t", "--text", help="text to encode/decode is supplied")
 	parser.add_argument(
