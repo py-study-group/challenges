@@ -67,7 +67,7 @@ def auto_decode(unshifted_text):
     """ Get word frequencies for each real English word for each cipher shift amount, then the shift
     with the maximum ratio of real words to all words is returned."""
     cipher_quality = {shift: percent_real_words(shift_text(
-        unshifted_text, "decode", shift)) for shift in range(1, 26)}
+        unshifted_text, "decode", shift)) for shift in range(26)}
     return(int(max(cipher_quality, key=cipher_quality.get)))
 
 
