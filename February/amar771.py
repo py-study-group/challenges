@@ -1,19 +1,9 @@
 '''
 Caesar cipher
 '''
+import sys
 
 ALPHABET = 'abcdefghijklmnopqrstuvwxyz'
-
-
-def letter_number(letter):
-    counter = 0
-    for x in ALPHABET:
-        if letter == x:
-            return counter
-
-        counter += 1
-
-    return "Letter not in alphabet"
 
 
 def encode(string, key):
@@ -34,7 +24,7 @@ def encode(string, key):
             encoded += letter
 
         else:
-            encoded += ALPHABET[(letter_number(letter) + key) % len(ALPHABET)]
+            encoded += ALPHABET[(ALPHABET.index(letter) + key) % len(ALPHABET)]
 
     return encoded
 
@@ -57,6 +47,7 @@ def decode_bruteforce(string):
     for number in range(len(ALPHABET), 0, -1):
         key = len(ALPHABET) - number
         print("Key ({0:2d}) - {1}".format(key, encode(string, number)))
+
 
 if __name__ == '__main__':
     to_encode = 'abcz'
