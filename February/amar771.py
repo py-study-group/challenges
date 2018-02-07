@@ -66,6 +66,15 @@ def help_description():
     print("\nTool for encrypting and decrypting text with Caesar cipher.\n")
 
 
+def read_from_file(link):
+    text = ''
+    with open(link, "r") as file:
+        for line in file:
+            text += line
+
+    return text
+
+
 def ask_key(encode=False, decode=False):
     if encode:
         print("What key do you want to use [1-{}]? (RETURN for random key.)".
@@ -74,14 +83,67 @@ def ask_key(encode=False, decode=False):
     elif decode:
         print("What key do you want to use [1-{}]? (RETURN for brute-force)".
               format(len(ALPHABET)))
+
     key = input("--> ")
+    print()
 
     return key
 
 
+def ask_string(args):
+    if args.file:
+        args.string = str(input("Enter the name of the file --> "))
+    elif args.text:
+        args.string = str(input("Enter the string --> "))
+
+
+def ask_input_type(args):
+    print("Do you want enter a string here or use a file?")
+    while not args.text and not args.file:
+        string = str(input("[text/file/quit] --> "))
+        string.lower()
+
+        if string in ['text', 't']:
+            args.text = True
+
+        elif string in ['file', 'f']:
+            args.file = True
+
+        elif string in ['quit', 'q']:
+            sys.exit()
+
+
+def ask_mode_type(args):
+    print("Do you want to encode or decode?")
+    while not args.encode and not args.decode:
+        string = str(input("[encode/decode/quit] --> "))
+        string.lower()
+
+        if string in ['encode', 'e']:
+            args.encode = True
+
+        elif string in ['decode', 'd']:
+            args.decode = True
+
+        elif string in ['quit', 'q']:
+            sys.exit()
+
+
 def args_actions(args):
+    if not args.text and not args.file:
+        ask_input_type(args)
+
+    if not args.string:
+        ask_string(args)
+
+    if not args.encode and not args.decode:
+        ask_mode_type(args)
+
     if args.text:
-        text = args.text
+        text = args.string
+
+    if args.file:
+        text = read_from_file(args.string)
 
     key = args.key
     if not key:
@@ -101,7 +163,9 @@ if __name__ == '__main__':
                         action='version',
                         version='%(prog)s 1.2')
 
-    parser.add_argument('text', type=str, help="text or file to encode")
+    parser.add_argument('-s', '--string', type=str,
+                        help="text or file to encode",
+                        required=False)
     parser.add_argument('-k', '--key', type=int,
                         help="key to encode or decode with",
                         required=False)
@@ -110,19 +174,26 @@ if __name__ == '__main__':
     input_group = parser.add_mutually_exclusive_group()
     input_group.add_argument('-f', '--file',
                              action='store_true',
-                             help='Add file to encode or decode')
+                             help='Add file to encode or decode',
+                             required=False)
     input_group.add_argument('-t', '--text',
                              action='store_true',
-                             help='Type text to encode or decode')
+                             help='Type text to encode or decode',
+                             required=False)
+
+    #
+    group = parser.add_argument_group
 
     # You can encode or you can decode, can't do both
     action_group = parser.add_mutually_exclusive_group()
     action_group.add_argument('-e', '--encode',
                               action='store_true',
-                              help='Encodes using a key or with random key')
+                              help='Encodes using a key or with random key',
+                              required=False)
     action_group.add_argument('-d', '--decode',
                               action='store_true',
-                              help='Decodes using one of decode methods')
+                              help='Decodes using one of decode methods',
+                              required=False)
 
     args = parser.parse_args()
     try:
